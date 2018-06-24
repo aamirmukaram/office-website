@@ -1,0 +1,96 @@
+// bower:scss
+// endbower
+@import "reset";
+@import "fonts";
+
+* {
+  //border: 1px solid red !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 14px;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 600%;
+  width: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  //background: rgba(0, 136, 15, 0.55);
+
+  .mainContent {
+    display: flex;
+    max-width: 1214px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+
+  > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1214px;
+    z-index: 1000;
+    transition: height 0.3s;
+
+    &.shrink {
+      height: 50px;
+    }
+
+    > .logo {
+
+    }
+
+    > .text {
+      flex: 1;
+      margin: 0 0 0 13px;
+      color: #fff;
+      font-family: "ProximaNova Regular";
+      font-size: 13px;
+      font-weight: 400
+    }
+  }
+
+  > .section-1 {
+    height: 90vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    > article {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      header > .text {
+        font-family: "GothamRounded Light";
+        color: #f6f9fa;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 57px;
+      }
+
+      > .text {
+        font-family: "ProximaNova Regular";
+        color: #f6f9fa;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
