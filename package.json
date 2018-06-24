@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "postinstall": "gulp build"
+    "postinstall": "bower install && gulp build"
   },
   "engines": {
     "node": "6.11.0",
